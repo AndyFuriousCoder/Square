@@ -25,8 +25,8 @@ public class SquareTest{
     public void sideLengthMethodTest()
     {
         double sideLength = testSquare.sideLength();
-        assertNotNull("Element not exist!", sideLength);
-        assertTrue("Wrong side length!",sideLength>0);
+        assertNotNull("Method sideLength() fault: Element not exist!", sideLength);
+        assertTrue("Method sideLength() fault: Wrong side length!",sideLength>0);
     }
 
     //Тест 2: проверка метода square()
@@ -34,8 +34,8 @@ public class SquareTest{
     public void squareMethodTest()
     {
         double square = testSquare.square();
-        assertNotNull("Element not exist!",square);
-        assertTrue("Wrong square value!",square>0);
+        assertNotNull("Method square() fault: Element not exist!",square);
+        assertTrue("Method square() fault: Wrong square value!",square>0);
     }
 
     //Тест 3: проверка метода equalsSquare()
@@ -44,10 +44,10 @@ public class SquareTest{
     {
         boolean statementTrue = testSquare.equalsSquare(testSquare);
         boolean statementFalse = testSquare.equalsSquare(SquareFactory.newSquare(99.10));
-        assertNotNull("Element not exist!",statementTrue);
-        assertTrue("Elements are not equals!",statementTrue);
-        assertNotNull("Element not exist!",statementFalse);
-        assertTrue("Different elements are equals!",!statementFalse);
+        assertNotNull("Method equalsSquare() fault: Element not exist!",statementTrue);
+        assertTrue("Method equalsSquare() fault: Same elements are not equals!",statementTrue);
+        assertNotNull("Method equalsSquare() fault: Element not exist!",statementFalse);
+        assertTrue("Method equalsSquare() fault: Different elements are equals!",!statementFalse);
     }
 
     //Набор параметров для тестов (стороны квадрата)
