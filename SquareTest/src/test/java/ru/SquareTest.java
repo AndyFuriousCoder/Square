@@ -50,6 +50,7 @@ public class SquareTest{
         assertTrue("Different elements are equals!",!statementFalse);
     }
 
+    //Набор параметров для тестов (стороны квадрата)
     @Parameterized.Parameters
     public static Collection<Object[]> getTestData() {
         return Arrays.asList(new Object[][]{
