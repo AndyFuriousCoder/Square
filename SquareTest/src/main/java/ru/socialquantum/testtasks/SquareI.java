@@ -1,5 +1,4 @@
 package ru.socialquantum.testtasks;
-import ru.socialquantum.testtasks.Square;
 
 public class SquareI implements Square {
     private final double sideLength;
