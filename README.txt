@@ -7,7 +7,7 @@
 -Зафиксировать все найденные проблемы. 
 
 Решение:
-Код теста в директории: \SquareTest\src\test\java\ru\SquareTest.java
+Код теста в файле: \SquareTest\src\test\java\ru\SquareTest.java
 Сборка проекта проведена в Maven, framework JUnit, Allure reporter
 Запуск проекта из коммандной строки: mvn clean test
 Создание отчёта из коммандной строки: mvn site (фиксация проблем)
