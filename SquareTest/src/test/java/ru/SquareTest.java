@@ -5,8 +5,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import ru.socialquantum.testtasks.Square;
 import ru.socialquantum.testtasks.SquareFactory;
-import ru.socialquantum.testtasks.SquareI;
-
 import java.util.Arrays;
 import java.util.Collection;
 import static org.junit.Assert.assertTrue;
@@ -51,9 +49,15 @@ public class SquareTest{
     @Parameterized.Parameters
     public static Collection<Object[]> getTestData() {
         return Arrays.asList(new Object[][]{
-                {0.10},
-                {10.10},
-                {20.10},
-                {30.10}});
+                {-0.1},
+                {0.0},
+                {0.01},
+                {0.1},
+                {10.0},
+                {10.1},
+                {20.1},
+                {39.1},
+                {5},
+                {129}});
     }
 }
